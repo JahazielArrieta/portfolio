@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
+html,body{
+  margin:0;
+  height:120%;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  
+
+}
+.header{
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  height:50vw;
+  min-height:400px;
+  max-height:550px;
+  min-width:300px;
+  color:#eee;
+}
+.header:after{
+  content:"";
+  width:100%;
+  height:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  z-index:-1;
+ background: linear-gradient(to bottom, rgba(0,0,0,0.1) 40%,rgba(27,32,48,1) 100%);
+}
+.header:before{
+  content:"";
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+    transform: translateZ(0);
+  background:#1B2030 url(http://myzeroone.com/myzeroone/16068-web-developer-wallpaper_3407.jpg) center no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+  animation: grow 60s  linear 10ms infinite;
+  transition:all 0.2s ease-in-out;
+  z-index:-2
+}
+.header a{
+  color:#eee
+}
+.menu{
+  display:block;
+  width:40px;
+  height:30px;
+  border:2px solid #fff;
+  border-radius:3px;
+  position:absolute;
+  right:20px;
+  top:20px;
+  text-decoration:none
+}
+.menu:after{
+  content:"";
+  display:block;
+  width:20px;
+  height:3px;
+  background:#fff;
+  position:absolute;
+  margin:0 auto;
+  top:5px;
+  left:0;
+  right:0;
+  box-shadow:0 8px, 0 16px
+}
+.logo{
+  border:2px solid #fff;
+  border-radius:3px;
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+  align-content:center;
+  margin:20px;
+  padding:0px 10px;
+  font-weight:600;
+  font-size:1.2em;
+  line-height:1;
+  box-sizing:border-box;
+  height:40px
+}
+.sides, .info{
+  flex: 0 0 auto;
+  width:50%
+}
+.info{
+  width:100%;
+  padding:15% 10% 0 10%;
+  text-align:center;
+  text-shadow:0 2px 3px rgba(0,0,0,0.2)
+}
+.author{
+  display:inline-block;
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  background:url(https://scontent-lax3-1.cdninstagram.com/vp/79831ee3d6371272a27887f608f5f039/5DF85EB4/t51.2885-19/s150x150/59039738_405437520293337_5668514119481819136_n.jpg?_nc_ht=scontent-lax3-1.cdninstagram.com) center no-repeat;
+  background-size:cover;
+  box-shadow:0 2px 3px rgba(0,0,0,0.3);
+  margin-bottom:3px
+}
+.info h4, .meta{
+  font-size:0.7em
+}
+.meta{
+  font-style:italic;
+}
+@keyframes grow{
+  0% { transform:scale(1)}
+  50% { transform:scale(1.2)}
+}
+.content{  
+  padding:5% 10%;
+  text-align:justify;
+  background-color: white;
+}
+.btn{
+  color:#333;
+  border:2px solid;
+  border-radius:3px;
+  text-decoration:none;
+  display:inline-block;
+  padding:5px 10px;
+  font-weight:600
+}
+
+.twtr{
+  margin-top:100px
+}.btn.twtr:after{content:"\1F426";padding-left:5px}
+
+.thumbnail{
+    height: 180px;
+    width: 180px;
+    padding: 0 15px;
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 50%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#skills{
+    
+    height: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    position: absolute;
+    margin: auto 10%;
+    width: 80%;
+}
+
+#skills h2{
+    text-align: center;
+    
+}
+.zoom {
+    padding: 5px;
+    transition: transform .2s; /* Animation */
+    width: 75px;
+    height: 65px;
+    margin: 0 auto;
+    
+  }
+  
+  .zoom:hover {
+    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  .skills-background{
+      
+      opacity: 0.2;
+      position: relative;
+      padding-top: 260px;
+      -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+    transform: translateZ(0);
+      background-color: #1B2030;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      background-size:cover;
+      background-attachment:fixed;
+      animation: grow 60s  linear 10ms infinite;
+      transition:all 0.2s ease-in-out;
+      z-index:-2
+
+  }
+  .skills-background:hover{
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+  }
+
+  .skills-title{
+      padding: 30% 10% 0 10%;
+      color: white;
+      animation: grow 15s  linear 30ms infinite;
+      transition:all 0.4s ease-in-out;
+      
+  }
+
+  .material {
+    width: 15%
+
+  }
+
+  #services{
+    height: 75%;
+    background-image: linear-gradient( #39b5c5 , #0e2235);
+    
+  }
+
+  .material img{
+   height: 50%;
+  }
+
+  .row{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  #cards{
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    transition: transform .2s;
+    margin: 20px 30px 20px 30px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.3), 
+    0 15px 12px rgba(0,0,0,0.22);
+    border-radius: 10%;
+    background-color: #fff
+    
+  }
+
+  #cards:hover{
+    transform: scale(1.3);
+  }
+
+  h4{
+  }
+
+  
+
+  .section-heading{
+    padding-top: 100%;
+    color: white;
+    font-size: 3em;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: absolute;
+    background-color: #fff
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    left: 20%;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 50%;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  .footer{
+    height: 100%;
+  }
+
+  .projects-heading{
+    margin-top: 10%;
+    background-color: 
+  }
+
+  /* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
+  #site-footer {
+    padding: 25px 0;
+    font-size: 85%;
+    background-color: #2A2A2A;
+    position: fixed;
+    z-index: -10;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  /* NOT NEEDED, THIS IS JUST FOR THE PEN */
+  @import url(//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css);
+  
+  html, body {
+    padding: 0;
+    margin: 0;
+  }
+  #site-content {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('http://dummyimage.com/3000x3000/D1D1D1/2A2A2A.png?text=Scroll+Down');
+  }
+  
+  #site-footer {
+    min-height: 20vw;
+    /* DID THIS SO YOU CAN SEE IT AUTOMATICALLY SCALE - SIMULATION RESPONSIVENESS */
+    /* RESIZE THE WINDOW AND THEN SCROLL VERITCALLY AGAIN */
+    background-size: cover;
+    background-position: center;
+    background-image: url('http://dummyimage.com/1500x1500/2A2A2A/FFF.png?text=Footer+Area+(Resize+Me)');
+  }
+
+  .foot{
+    height: 100%;
+  }
+
+  
